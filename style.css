@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(178, 190, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height:30%;
+  width:100%;
+  border-radius:10px 10px 0 0;
+  background-color: #0073b1;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: rgb(0, 87, 128);
+  padding:3px;
+}
+
+
+
+h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+
+.bio {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 15px 0;
+  font-family: verdana;
+  color:black;
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0073b1;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.utc-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.title,
+.email,
+.location{
+
+  font-size: 12px;
+  color: #555;
+  margin: 5px 0;
+  
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .bio {
+    font-size: 10px;
+  }
+
+  .social-links a {
+    font-size: 12px;
+  }
+
+  .utc-time {
+    font-size: 10px;
+  }
+
+  .title,
+  .email,
+  .location {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-card {
+    padding: 10px;
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .bio {
+    font-size: 8px;
+  }
+
+  .social-links a {
+    font-size: 10px;
+  }
+
+  .utc-time {
+    font-size: 8px;
+  }
+
+  .title,
+  .email,
+  .location {
+    font-size: 8px;
+  }
+}
